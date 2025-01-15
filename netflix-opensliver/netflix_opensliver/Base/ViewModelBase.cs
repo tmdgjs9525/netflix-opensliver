@@ -1,10 +1,11 @@
-﻿using System;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace netflix_opensliver.Base
 {
-    internal class ViewModelBase
+    public partial class ViewModelBase : ObservableObject
     {
     }
 }
