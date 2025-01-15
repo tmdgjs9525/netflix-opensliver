@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
+using netflix_opensliver.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -17,9 +18,10 @@ namespace netflix_opensliver
 
             IServiceProvider provider = serviceInitialize();
 
-            var mainPage = provider.GetRequiredService<MainPage>();
+            var mainView         = provider.GetRequiredService<MainView>();
+            mainView.DataContext = provider.GetRequiredService<MainViewModel>();
 
-            Window.Current.Content = mainPage;
+            Window.Current.Content = mainView;
         }
 
         private IServiceProvider serviceInitialize()
@@ -38,7 +40,8 @@ namespace netflix_opensliver
     {
         public static IServiceProvider ConfigureService(this IServiceCollection services)
         {
-            services.AddSingleton<MainPage>();
+            services.AddSingleton<MainView>();
+            services.AddSingleton<MainViewModel>();
 
             return services.BuildServiceProvider();
         }

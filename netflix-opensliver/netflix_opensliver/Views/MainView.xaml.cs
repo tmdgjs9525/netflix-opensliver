@@ -7,9 +7,9 @@ using System.Windows.Controls;
 
 namespace netflix_opensliver
 {
-    public partial class MainPage : Page
+    public partial class MainView : Page
     {
-        public MainPage()
+        public MainView()
         {
             this.InitializeComponent();
 
