@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "netflix_opensliver.Browser", "netflix-opensliver\netflix_opensliver.Browser\netflix_opensliver.Browser.csproj", "{C8E8A601-364A-4DF3-B369-A82789D0BC68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "netflix_opensliver", "netflix-opensliver\netflix_opensliver\netflix_opensliver.csproj", "{D9FE3785-6C1A-47D1-8B31-0D43959AD82F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "netflix_opensliver.Simulator", "netflix-opensliver\netflix_opensliver.Simulator\netflix_opensliver.Simulator.csproj", "{FDB74CE7-2618-43C1-B334-07A3AD5F73E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platform", "Platform", "{D3F508B0-DFE4-4B78-A826-A63F21883AA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "netflix_opensliver.Core", "netflix_opensliver.Core\netflix_opensliver.Core.csproj", "{EA1E28E3-7F19-4052-A851-A81E3A61AF62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8E8A601-364A-4DF3-B369-A82789D0BC68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8E8A601-364A-4DF3-B369-A82789D0BC68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8E8A601-364A-4DF3-B369-A82789D0BC68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8E8A601-364A-4DF3-B369-A82789D0BC68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9FE3785-6C1A-47D1-8B31-0D43959AD82F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9FE3785-6C1A-47D1-8B31-0D43959AD82F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9FE3785-6C1A-47D1-8B31-0D43959AD82F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9FE3785-6C1A-47D1-8B31-0D43959AD82F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB74CE7-2618-43C1-B334-07A3AD5F73E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB74CE7-2618-43C1-B334-07A3AD5F73E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB74CE7-2618-43C1-B334-07A3AD5F73E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB74CE7-2618-43C1-B334-07A3AD5F73E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA1E28E3-7F19-4052-A851-A81E3A61AF62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1E28E3-7F19-4052-A851-A81E3A61AF62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1E28E3-7F19-4052-A851-A81E3A61AF62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1E28E3-7F19-4052-A851-A81E3A61AF62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8E8A601-364A-4DF3-B369-A82789D0BC68} = {D3F508B0-DFE4-4B78-A826-A63F21883AA0}
+		{FDB74CE7-2618-43C1-B334-07A3AD5F73E9} = {D3F508B0-DFE4-4B78-A826-A63F21883AA0}
+	EndGlobalSection
+EndGlobal
