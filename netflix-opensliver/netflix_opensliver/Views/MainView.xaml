@@ -11,19 +11,6 @@
     mc:Ignorable="d">
 
     <Grid Background="{DynamicResource Theme_BackgroundBrush}">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="1*" />
-            <RowDefinition Height="9*" />
-        </Grid.RowDefinitions>
-
-
-        <TextBlock
-            Margin="32,32,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            FontSize="23"
-            Text="Hello, World!" />
-
-        <TransitioningContentControl Grid.Row="1" RegionManager:RegionManager.RegionName="MainRegion" />
+        <TransitioningContentControl RegionManager:RegionManager.RegionName="MainRegion" />
     </Grid>
 </Page>
