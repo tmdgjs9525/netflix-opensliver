@@ -12,7 +12,7 @@ namespace netflix_opensliver
         public MainView()
         {
             this.InitializeComponent();
-
+            
             // Enter construction logic here...
         }
     }

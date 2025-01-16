@@ -1,8 +1,18 @@
 ﻿<UserControl
     x:Class="netflix_opensliver.Views.LoginView"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Width="200"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Background="Blue"
-    xmlns:local="clr-namespace:netflix_opensliver.Views">
-    
-        <TextBlock Text="Login View" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:netflix_opensliver.Views"
+    Width="{Binding ActualWidth, RelativeSource={RelativeSource AncestorType=TransitioningContentControl}}"
+    Height="{Binding ActualHeight, RelativeSource={RelativeSource AncestorType=TransitioningContentControl}}"
+    HorizontalAlignment="Stretch"
+    VerticalAlignment="Stretch">
+    <Grid Background="Blue">
+        <TextBlock
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontSize="24"
+            Text="Login View" />
+    </Grid>
+
 </UserControl>

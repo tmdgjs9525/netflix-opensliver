@@ -42,8 +42,4 @@
     <ProjectReference Include="..\..\netflix_opensliver.Core\netflix_opensliver.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Base\" />
-  </ItemGroup>
-
 </Project>
