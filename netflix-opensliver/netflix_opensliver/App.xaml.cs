@@ -1,12 +1,10 @@
 ﻿using CommunityToolkit.Mvvm.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection;
+using netflix_opensliver.Core;
 using netflix_opensliver.ViewModels;
+using netflix_opensliver.Views;
 using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Windows;
-using System.Windows.Controls;
 
 namespace netflix_opensliver
 {
@@ -40,6 +38,10 @@ namespace netflix_opensliver
     {
         public static IServiceProvider ConfigureService(this IServiceCollection services)
         {
+            Container container = new Container(services);
+
+            container.AddSingletonNavigation<LoginView,LoginViewModel>();
+
             services.AddSingleton<MainView>();
             services.AddSingleton<MainViewModel>();
 

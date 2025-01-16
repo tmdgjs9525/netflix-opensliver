@@ -8,11 +8,10 @@
   
   <PropertyGroup>
     <LangVersion>preview</LangVersion>
+	  <Nullable>enable</Nullable>
   </PropertyGroup>
   
   <ItemGroup>
-    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.1" />
     <PackageReference Include="OpenSilver" Version="3.1.2" />
     <PackageReference Include="OpenSilver.Themes.Modern" Version="3.1.*" />
   </ItemGroup>
@@ -21,6 +20,9 @@
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Views\LoginView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainView.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -28,9 +30,20 @@
 
   <ItemGroup>
     <Compile Include="App.xaml.cs" />
-    <Compile Include="Base\ViewModelBase.cs" />
+    <Compile Include="Names\RegionNames.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="Names\ViewNames.cs" />
+    <Compile Include="Views\LoginView.xaml.cs" />
     <Compile Include="Views\MainView.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\netflix_opensliver.Core\netflix_opensliver.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Base\" />
   </ItemGroup>
 
 </Project>

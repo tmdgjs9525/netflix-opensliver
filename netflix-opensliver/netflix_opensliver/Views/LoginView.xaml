@@ -1,0 +1,8 @@
+﻿<UserControl
+    x:Class="netflix_opensliver.Views.LoginView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Width="200"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Background="Blue"
+    xmlns:local="clr-namespace:netflix_opensliver.Views">
+    
+        <TextBlock Text="Login View" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+</UserControl>

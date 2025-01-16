@@ -1,18 +1,27 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-using netflix_opensliver.Base;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using netflix_opensliver.Core;
+using netflix_opensliver.Core.Navigate;
+using netflix_opensliver.Names;
 
 namespace netflix_opensliver.ViewModels
 {
     public partial class MainViewModel : ViewModelBase
     {
+        #region fields
+        private readonly INavigationService _navigationService;
+        #endregion
 
+        #region properties
 
-        public MainViewModel()
+        #endregion
+        public MainViewModel(INavigationService navigationService)
         {
-            
+            _navigationService = navigationService;
+
+            _navigationService.NavigateTo(RegionNames.MainRegion,ViewNames.LoginView);
         }
+
+        #region Commands
+
+        #endregion
     }
 }
