@@ -13,7 +13,7 @@
                 <Grid>
                     <TextBlock
                         x:Name="tb"
-                        Margin="10,0,0,0"
+                        Margin="10,0,0,0" FontSize="16"
                         VerticalAlignment="Center"
                         Text="{TemplateBinding PlaceholderText}" />
                     <ScrollViewer
@@ -33,16 +33,16 @@
                                     To="10,-30,0,0"
                                     Duration="0:0:0.1">
                                     <ThicknessAnimation.EasingFunction>
-                                        <SineEase EasingMode="EaseInOut" />
+                                        <CircleEase EasingMode="EaseInOut" />
                                     </ThicknessAnimation.EasingFunction>
                                 </ThicknessAnimation>
                                 <DoubleAnimation
                                     Storyboard.TargetName="tb"
                                     Storyboard.TargetProperty="FontSize"
-                                    To="10"
-                                    Duration="0:0:0.15">
+                                    To="12"
+                                    Duration="0:0:0.1">
                                     <DoubleAnimation.EasingFunction>
-                                        <SineEase EasingMode="EaseInOut" />
+                                        <CircleEase EasingMode="EaseInOut" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
                                 <ColorAnimation
@@ -60,25 +60,25 @@
                                     Storyboard.TargetName="tb"
                                     Storyboard.TargetProperty="Margin"
                                     To="10,0,0,0"
-                                    Duration="0:0:0.1">
+                                    Duration="0:0:0.2">
                                     <ThicknessAnimation.EasingFunction>
-                                        <SineEase EasingMode="EaseIn" />
+                                        <CircleEase EasingMode="EaseIn" />
                                     </ThicknessAnimation.EasingFunction>
                                 </ThicknessAnimation>
                                 <DoubleAnimation
                                     Storyboard.TargetName="tb"
                                     Storyboard.TargetProperty="FontSize"
-                                    To="12"
-                                    Duration="0:0:0.15">
+                                    To="16"
+                                    Duration="0:0:0.2">
                                     <DoubleAnimation.EasingFunction>
-                                        <SineEase EasingMode="EaseIn" />
+                                        <CircleEase EasingMode="EaseIn" />
                                     </DoubleAnimation.EasingFunction>
                                 </DoubleAnimation>
                                 <ColorAnimation
                                     Storyboard.TargetName="tb"
                                     Storyboard.TargetProperty="(TextBlock.Foreground).(SolidColorBrush.Color)"
                                     To="White"
-                                    Duration="0:0:0.1">
+                                    Duration="0:0:0.2">
                                     <ColorAnimation.EasingFunction />
                                 </ColorAnimation>
                             </Storyboard>
