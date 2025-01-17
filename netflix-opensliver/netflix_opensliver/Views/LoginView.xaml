@@ -42,7 +42,7 @@
                     Height="56"
                     Background="{StaticResource TextBoxBackgroundBrush}"
                     BorderBrush="White"
-                    BorderThickness="1"
+                    BorderThickness="1" CornerRadius="3"
                     Foreground="White"
                     PlaceholderText="이메일 주소 또는 휴대폰 번호" />
                 <!--  StaticResource에서 TextBoxBackGroundBrush를 직접 입력해줘야함 ;;  -->
